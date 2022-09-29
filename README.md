@@ -40,7 +40,7 @@ sobre dos professores, no banco de dados da Universidade.
 A tabela <i>aluno</i> descreve dentro no modelo relacional elaborado, é responsavel por manter de relacionar as tabelas "professores" e  "turma", no banco de dados da Universidade.
 <ul>
     <p>fk_alunos_Mat : Chave estrangeira responsavel por fazer referência a tabela de aluno.</p>
-    <p>fk_Disciplinas_Cod_Disc : Chave estrangeira responsal por fazer referência a tabela turma references aluno.</p>
+    <p>fk_Disciplinas_Cod_Disc : Chave estrangeira responsal por fazer referência a tabela disciplina.</p>
 </ul>
 
 <h2>Tabela <i>Histórico</i></h2>
@@ -48,10 +48,20 @@ A tabela <i>aluno</i> descreve dentro no modelo relacional elaborado, onde e qua
 sobre dos alunos, no banco de dados da Universidade.
 <ul>
     <p>MAT : Responvesal por fazer referência a matricula do aluno references aluno(MAT).</p>
-    <p>ano : chave primária da tabela, responsavel por armazenar o ano em que o aluno está estudando no momento</p>
-    <p>fk_disciplinas_cod_disc : Chave estrangeira responsavel por fazer referência a tabela de disciplinas references discplinas(cod_prof).</p>
-    <p>fk_professores_cod_prof : Chave estrangeira responsavel por fazer referência a tabela de professores references professores(cod_prof).</p>
-    <p>fk_turma_cod_turma : Chave estrangeira responsal por fazer referência a tabela turma references aluno(cod_turma).</p>
+    <p>ano : responsavel por armazenar o ano em que o aluno está estudando no momento</p>
+    <p>cod_disc : responsavel por fazer referência a tabela de disciplinas references discplinas(cod_prof).</p>
+    <p>cod_prof : responsavel por fazer referência a tabela de professores references professores(cod_prof).</p>
+    <p>cod_turma : responsal por fazer referência a tabela turma references aluno(cod_turma).</p>
     <p>frequencia : Responsavel por armazenar a frequencia do aluno</p>
     <p>nota : Responsavel por armazenar do périodo em que o aluno está na universidade</p>
+</ul>
+<h2>Tabela <i>Turma</i></h2>
+A tabela <i>turma</i> descreve dentro no modelo relacional elaborado, onde e quais atributos iremos manter no banco
+sobre dos alunos, no banco de dados da Universidade.
+<ul>
+    <p>cod_disc : responsavel por fazer referência a tabela de disciplinas references discplinas(cod_prof).</p>
+    <p>cod_prof : responsavel por fazer referência a tabela de professores references professores(cod_prof).</p>
+    <p>cod_turma : responsal por fazer referência a tabela turma references aluno(cod_turma).</p>
+    <p>frequencia : Frequencia dos alunos</p>
+    <p>horario : Horarios das turmas</p>
 </ul>
